@@ -1,0 +1,101 @@
+.project-x{
+    background-color: whitesmoke;
+    padding-top:3em;
+}
+.project-home{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 2em 1em;
+}
+.project-home img{
+    width: min(30em,80%);
+}
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: min(30em,80%);
+}
+.project-button{
+    display: flex;
+    gap: 1em;
+}
+.project-button button{
+    padding: 0.75em 1.5em;
+    gap: 1em;
+    border: none;
+    background-color: white;
+    transition: all 0.5s;
+    cursor:pointer;
+}
+.project-button button:hover{
+    background-color: orangered;
+    color: white;
+}
+.project-content h1{
+    font-size: 1.5em;
+    color: orangered;
+    margin: 0%;
+}
+.project-content p{
+    color: var(--lightfont);
+    line-height: 1.5em;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.project h3{
+    color: var(--secondary);
+    margin-bottom: 0 ;
+    font-size: 1em;
+}
+.project h1{
+    margin-top: .25em;
+    font-size: 1.5em;
+    width: 5em;
+    text-align: center;
+    margin-bottom:  0%;
+    cursor: pointer;
+}
+.project p{
+    height: 0.25em;
+    width: 1em;
+    margin-top: 0.5em;
+    background-color: orangered;
+    transition: width 1s;
+    border-radius: 1em;
+}
+.techstack{
+    font-size: 0.75em;
+    padding: 0.5em 1em;
+    background-color: whitesmoke;
+    color: grey;
+    margin: 0.5em;
+    border: 1px dashed rgba(0, 0, 0, 0.728);
+}
+.project h1:hover+p{
+    width: 5em;
+}
+button.but-source{
+    background-color: orangered;
+    color: white;
+}
+button.but-source:hover{
+    background-color: rgb(91, 91, 253);
+}
+@media (max-width:992px){
+    .project-home{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+        text-align:center;
+    }
+    .project-button{
+        justify-content: center;
+    }
+}

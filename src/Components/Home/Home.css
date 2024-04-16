@@ -1,0 +1,65 @@
+.home{
+    background: url(../../Assets/padded-light.png);    
+    background-color: rgb(19, 23, 255);
+    color: white;
+    height: min(calc(100vh),50em);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.home-image{
+    height: 12em;
+    background-color: orange;
+    width: 12em;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.home-head{
+    padding: 0.5em;
+}
+.home-image-inner{
+    background-color: orangered;
+    width: 11em;
+    height:11em;
+    border-radius: 50%;
+}
+.home-content{
+    width: min(30em,80%);
+    padding-bottom: 2em;
+}
+.home-button{
+    display: flex;
+    gap: 1em;
+}
+.home-button-1:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border:none;
+}
+.home-button-2:hover{
+    background-color: rgba(0,0,0,0.3);
+    border-color: transparent;
+}
+.home-button-1,.home-button-2{
+    cursor: pointer;
+    background-color: orangered;
+    padding: 0.75em 2em;
+    transition: all 0.5s;
+    border-radius: 100em;
+    text-decoration: none;
+    color: white;
+}
+.home-button-2{
+    background-color: transparent;
+    border: 1px solid white;
+    align-items: center;
+    display: flex;
+}
+.home-button-2 img{
+    width: 1em;
+    padding-right:0.5em;
+}

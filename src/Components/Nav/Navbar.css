@@ -1,0 +1,126 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 4em;
+    align-items: center;
+    padding: 0% 2em;
+    color: black;
+    z-index: 5;
+}
+.navbar-content a{
+    text-decoration: none;
+    color:black;
+}
+.navbar-button {
+    display: none;
+    height: 2em;
+    cursor: pointer;
+}
+
+.navbar-content {
+    display: flex;
+}
+
+.navbar-content li {
+    list-style-type: none;
+    padding: 0% 1em;
+    font-weight: 700;
+    font-size: 1em;
+    cursor: pointer;
+    padding:0.75em 1.2em;
+}
+
+.navbar-content li:hover {
+    color: blueviolet;
+    border-radius: 10em;
+}
+
+.navbar h3 {
+    margin: 0%;
+    font-weight: 800;
+}
+
+#nav-contact,#nav-contact:hover{
+    background-color: rgb(255, 84, 21);
+    border-radius: 100em;
+    color: white;
+    padding:0.75em 1.2em;
+    transition: background-color 0.5s;
+}#nav-contact:hover{
+    background-color: blueviolet;
+}
+@media (max-width:768px) {
+    #nav-contact{
+        display: none;
+    }
+    .navbar-button {
+        display: block;
+    }
+
+    .navbar-button-close {
+        height: 1.25em;
+    }
+
+    .navbar-content {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        left: 0;
+        top: 4em;
+        height: 0%;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.395);
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        transition: height 0.5s;
+    }
+    .navbar-open li,.navbar-close li{
+        backdrop-filter: blur(1em);
+    }
+    .navbar-close {
+        height: 15em;
+        background-color:rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(1em);
+    }
+
+    .navbar-open {
+        height: 0px;
+        background-color:rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2em);
+    }
+    .navbar-content a {
+        padding: 1px;
+        font-size: large;
+        width: 100%;
+        color: white;
+    }
+    .navbar-content li:hover{
+        background-color: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 0px;
+    }
+    #nav-skill{
+        border: none;
+    }
+}
+@media (min-width:1589px){
+    .nav{
+        width: 100em;
+    }
+}
+@media (min-width:768px){
+    .navbar-content li:hover{
+        position: relative;
+        top: -1px;
+    }
+}

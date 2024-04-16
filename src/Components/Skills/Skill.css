@@ -1,0 +1,30 @@
+.skill-items img{
+    height: 3em;
+    padding: 1em;
+}
+.skills{
+    padding: 5em 2em;
+}
+.skill-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.skill *{
+    margin: 0.5%;
+}
+.skill h1{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.skill h3{
+    font-size: 1em;
+    color: var(--secondary);
+
+}
